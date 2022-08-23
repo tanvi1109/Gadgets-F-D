@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.heading{
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.listing-section, .cart-section {
+  width: 100%;
+  float: left;
+  padding: 1%;
+  border-bottom: 0.01em solid #dddbdb; 
+}
+
+.product {
+  float: left;
+  width: 23%;
+  border-radius: 2%;
+  margin: 1%;
+}
+
+.product:hover {
+  box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
+  -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2% 2% 0 0;
+}
+.images {
+  height: 15em;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  border-radius: 2% 2% 0 0;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+.images:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  border-radius: 2%;
+}
+#image-1 {background-image: url("andras-vas-Bd7gNnWJBkU-unsplash.jpg");}
+
+#image-2 {background-image: url("davide-boscolo-gz9njd0zYbQ-unsplash.jpg");}
+
+#image-3 {background-image: url("xps-yNvVnPcurD8-unsplash.jpg")}
+
+#image-4 {background-image: url("planetcare-23coWmkTNSg-unsplash.jpg")}
+
+#image-5 {background-image: url("vinit-vispute-IpIqJwxdiog-unsplash.jpg")}
+
+#image-6 {background-image: url("lg-refrigerator-500x500.jpg")}
+
+#image-7 {background-image: url("oscar-nord-8l9VxXI28tY-unsplash.jpg")}
+
+#image-8 {background-image: url("71RiQZ0J2SL._AC_SL1000_.jpg")}
+
+.text-box {
+  width: 100%;
+  float: left;
+  border: 0.01em solid #dddbdb;
+  border-radius: 0 0 2% 2%;
+  padding: 1em;
+}
+
+h2, h3 {
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0.2em auto;
+}
+
+.item, .price {
+  clear: left;
+  width: 100%;
+  text-align: center;
+}
+
+.price {
+  color: Grey;
+}
+
+.description, label, button, input {
+  float: left;
+  clear: left;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  margin: 0.2em auto;
+}
+
+input:focus {
+  outline-color: #fdf;
+}
+
+label {
+  width: 60%;
+}
+
+.text-box input {
+  width: 15%;
+  clear: none;
+}
+
+.text-box button {
+  margin-top: 1em;
+}
+
+button {
+  padding: 2%;
+  background-color: #dfd;
+  border: none;
+  border-radius: 2%;
+}
+
+button:hover {
+  bottom: 0.1em;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  bottom: 0;
+  background-color: #fdf;
+}
+
+    </style>
+  </head>
+  <body>
+<h1 class="heading">POPULAR PRODUCTS</h1>
+<div class="listing-section">
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-1"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">Apple Macbook</h2>
+      <h3 class="price">$700</h3>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <button type="button" name="item-1-button" id="item-1-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-2"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">Sony Headphones</h2>
+      <h3 class="price">$70</h3>
+      <label for="item-2-quantity">Quantity:</label>
+      <input type="text" name="item-2-quantity" id="item-2-quantity" value="1">
+      <button type="button" name="item-2-button" id="item-2-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-3"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">Dell Laptop</h2>
+      <h3 class="price">$550</h3>
+      <label for="item-3-quantity">Quantity:</label>
+      <input type="text" name="item-3-quantity" id="item-3-quantity" value="1">
+      <button type="button" name="item-3-button" id="item-3-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-4"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">Samsung Washing Machine</h2>
+      <h3 class="price">$600</h3>
+      <label for="item-4-quantity">Quantity:</label>
+      <input type="text" name="item-4-quantity" id="item-4-quantity" value="1">
+      <button type="button" name="item-4-button" id="item-4-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-5"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">One Plus Earphones</h2>
+      <h3 class="price">$100</h3>
+      <label for="item-5-quantity">Quantity:</label>
+      <input type="text" name="item-5-quantity" id="item-5-quantity" value="1">
+      <button type="button" name="item-5-button" id="item-5-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-6"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">LG Refrigerator</h2>
+      <h3 class="price">$800</h3>
+      <label for="item-6-quantity">Quantity:</label>
+      <input type="text" name="item-6-quantity" id="item-6-quantity" value="1">
+      <button type="button" name="item-6-button" id="item-6-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-7"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">Iphone 12</h2>
+      <h3 class="price">$500</h3>
+      <label for="item-7-quantity">Quantity:</label>
+      <input type="text" name="item-7-quantity" id="item-7-quantity" value="1">
+      <button type="button" name="item-7-button" id="item-7-button">Add to Cart</button>
+    </div>
+  </div>
+  <div class="product">
+    <div class="image-box">
+      <div class="images" id="image-8"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">Samsung LED TV</h2>
+      <h3 class="price">$400</h3>
+      <label for="item-8-quantity">Quantity:</label>
+      <input type="text" name="item-8-quantity" id="item-8-quantity" value="1">
+      <button type="button" name="item-8-button" id="item-8-button">Add to Cart</button>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

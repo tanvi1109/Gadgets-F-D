@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    height: 60px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+    color: #a9a9a9;
+}
+
+.nav-items a{
+    margin-left: 20px;
+}
+
+.nav-items a img{
+    width: 30px;
+}
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #2a2a2a;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+@import 'nav.css';
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url("davide-boscolo-gz9njd0zYbQ-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 600;
+}
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.product-container{
+    padding: 0 10vw;
+    display: flex;
+    
+}
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+.new-arrivals{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.new-arrivals::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.product-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+    </style>
+  </head>
+  <body>
+    </script>
+    <nav class="navbar">
+      <div class="nav">
+          <img src="LOGO.png" class="brand-logo" alt="">
+          <div class="nav-items">
+              <div class="search">
+                  <input type="text" class="search-box" placeholder="search brand, product">
+                  <button class="search-btn">search</button>
+              </div>
+              <a href="#"><img src="profile.jpg" alt=""></a>
+              <a href="#"><img src="cart.png" alt=""></a>
+          </div>
+      </div>
+      </nav>
+      <ul class="links-container">
+        <li class="link-item"><a href="#" class="link">home</a></li>
+        <li class="link-item"><a href="ProductCategory.html" class="link">Product Category</a></li>
+        <li class="link-item"><a href="AboutUs.html" class="link">About Us</a></li>
+        <li class="link-item"><a href="ContactUs.html" class="link">Contact Us</a></li>
+        <li class="link-item"><a href="login.html" class="link">LogIn</a></li>
+        <li class="link-item"><a href="SignUp.html" class="link">SignUp</a></li>
+    </ul>
+    <header class="hero-section">
+        <div class="content">
+            <p class="sub-heading">best electronics collection of all time</p>
+        </div>
+    </header>
+    <section class="product">
+        <h2 class="product-category">best selling</h2>
+    </section>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">10% off</span>
+                <img src="oscar-nord-8l9VxXI28tY-unsplash.jpg" class="product-thumb" alt="">
+                <button class="card-btn">add to whislist</button>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">5% off</span>
+                    <img src="theregisti-qt9_OfTaaeY-unsplash.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to whislist</button>
+                </div>
+
+            </div>
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-tag">5% off</span>
+                        <img src="andras-vas-Bd7gNnWJBkU-unsplash.jpg" class="product-thumb" alt="">
+                        <button class="card-btn">add to whislist</button>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div>
+                    <section class="product">
+                        <h2 class="product-category">NEW ARRIVALS</h2>
+                    </section>
+<div class="new-arrivals">
+    <div class="product-card">
+        <div class="product-image">
+            <img src="xps-yNvVnPcurD8-unsplash.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">ASUS</h2>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="vinit-vispute-IpIqJwxdiog-unsplash.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">ONE PLUS</h2>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="oscar-nord-8l9VxXI28tY-unsplash.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">APPLE</h2>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="kendal-percimoney-2_C8WE163ok-unsplash.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">SONY</h2>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="domenico-loia-EhTcC9sYXsw-unsplash.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">APPLE</h2>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="lg-refrigerator-500x500.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">LG</h2>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="planetcare-23coWmkTNSg-unsplash.jpg" class="product-thumb" alt="">
+        </div>
+        <div class="product-info">
+            <h2 class="product-brand">SAMSUNG</h2>
+        </div>
+    </div>
+</div>
+</div>
+            </body>
+</html>
